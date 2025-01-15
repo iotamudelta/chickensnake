@@ -1,0 +1,13 @@
+[package]
+name = "chickensnake"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+py-spy = { git = "https://github.com/benfred/py-spy" }
+
+[build-dependencies]
+cbindgen = "0.26.0"
+
+[lib]
+crate-type = ["cdylib"]

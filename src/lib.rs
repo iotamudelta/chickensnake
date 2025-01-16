@@ -16,6 +16,7 @@ pub extern "C" fn chickensnake_init(pid: i32) -> *mut State {
     //let result = std::panic::catch_unwind(|| {
     let mut config = py_spy::Config::default();
     config.blocking = py_spy::config::LockingStrategy::AlreadyLocked;
+    config.native = true;
     let proc = py_spy::PythonSpy::new(pid, &config);
 
     let state = State {

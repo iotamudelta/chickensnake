@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-py-spy = { git = "https://github.com/benfred/py-spy" }
+py-spy = { git = "https://github.com/iotamudelta/py-spy", branch="localrem", features=["unwind"] } 
 
 [build-dependencies]
 cbindgen = "0.26.0"
